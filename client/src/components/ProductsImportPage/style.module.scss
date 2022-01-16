@@ -1,0 +1,25 @@
+@import '../../assets/variables';
+@import '../../assets/components';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 2 * $md);
+  padding: $md;
+
+  .stepper {
+    align-self: center;
+  }
+
+  .errorContainer {
+    margin-bottom: $md;
+  }
+
+  .button {
+    align-self: flex-end;
+  }
+}
+
+.importButton {
+  margin-top: 5rem;
+}

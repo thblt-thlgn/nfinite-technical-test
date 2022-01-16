@@ -1,0 +1,14 @@
+@import '../../assets/variables';
+
+.container {
+  width: calc(100% - 2 * $md);
+  height: 70px;
+  padding: 0 $md;
+  border-bottom: 1px solid $charcoal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $primary;
+  color: $white;
+  font-style: italic;
+}

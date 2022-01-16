@@ -1,0 +1,67 @@
+@import '../../assets/variables';
+
+.listContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  align-items: center;
+  padding: $md 0;
+}
+
+.row {
+  width: 400px;
+  display: flex;
+  padding: $md;
+  border: 1px solid $charcoal;
+  align-items: center;
+  border-radius: $sm;
+
+  .status {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $charcoal;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.success .status {
+    background-color: $success;
+  }
+
+  &.error .status {
+    background-color: $alert;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 $md;
+  }
+
+  & + & {
+    margin-top: $sm;
+  }
+}
+
+.header {
+  display: flex;
+  padding: $md 0;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+
+  .goBackButton {
+    border: unset;
+    background-color: white;
+    font-size: 40px;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    left: $md;
+  }
+}

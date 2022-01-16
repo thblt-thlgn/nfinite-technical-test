@@ -1,0 +1,27 @@
+@import '../../assets/variables';
+
+.container {
+  border: 1px solid $charcoal;
+  padding: $md;
+  border-radius: $sm;
+  display: flex;
+}
+
+.index {
+  display: inline-flex;
+  border: 1px solid $charcoal;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-right: $sm;
+}
+
+.active > .index {
+  background-color: $primary;
+}
+
+.step + .step {
+  margin-left: $md;
+}

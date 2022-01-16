@@ -1,0 +1,8 @@
+@import '../../assets/variables';
+
+.container {
+  border: 1px solid $alert;
+  border-radius: $sm;
+  padding: $md;
+  color: $alert;
+}
